@@ -5,7 +5,7 @@ class App < Sinatra::Base
     set :views, Proc.new { File.join(root, "../views/") }
     #create a route that responds to a GET request at /
     get '/' do
-      erb :new
+      erb :super_hero
     end
 
     post '/teams' do
